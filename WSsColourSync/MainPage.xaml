@@ -9,6 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <TextBlock x:Name="TitleTB" HorizontalAlignment="Center" Margin="0,181,0,0" Text="Application running" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TitleTB_SelectionChanged" FontSize="48"/>
+        <TextBlock x:Name="CurerentColTB" HorizontalAlignment="Left" Margin="159,452,0,0" Text="Current Colour: " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="498,452,0,0" Text="{x:Bind todaysCol}" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" SelectionChanged="TextBlock_SelectionChanged_1"/>
+        <Rectangle HorizontalAlignment="Left" Height="48" Margin="916,452,0,0" Stroke="Black" VerticalAlignment="Top" Width="210" Fill="{ThemeResource SystemAccentColor}"/>
 
     </Grid>
 </Page>
